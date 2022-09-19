@@ -1,29 +1,40 @@
-<!DOCTYPE html>
-<!-- Coding By CodingNepal - youtube.com/codingnepal -->
-<html lang="en" dir="ltr">
+<!doctype html>
+<html lang="en">
   <head>
+    <title>Code Scrambler</title>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <title>Word Scramble Game | CodingNepal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/words.js" defer></script>
-    <script src="js/script.js" defer></script>
   </head>
-  <body>
+  <body class="mybody">
+
     <div class="container">
-        <h2>Word Scramble</h2>
-        <div class="content">
-            <p class="word"></p>
-            <div class="details">
-                <p class="hint">Hint: <span></span></p>
-                <p class="time">Time Left: <span><b>30</b>s</span></p>
-            </div>
-            <input type="text" spellcheck="false" placeholder="Enter a valid word">
-            <div class="buttons">
-                <button class="refresh-word">Refresh Word</button>
-                <button class="check-word">Check Word</button>
-            </div>
+        <div class="jumbotron mt-5 text-center vertical-align">
+          <p class="display-4 text-center text-primary ">CODE SCRAMBLER</p>
+          <p class="word h3"></p>
+          <h3><hr></h3>
+          <p class="hint">Hint: <span></span></p>
+          <div class="time text-right text-muted time"><p class="time">Time Left: <span><b>30</b>s</span></p></div>
+          <div class="input-area">
+            <h6  class="display-6 text-muted initialism text-left">Kindly Enter code below</h6>
+            <textarea  class="form-control form-rounded text-muted " id="" cols="126" rows="10 ">
+            </textarea>
+          <button class="btn btn-primary btn-warning mt-5 mr-5 check-word">Verify Code</button>
+          <button class="btn btn-primary mt-5 ml-5 refresh-word">Refresh Code</button>
+          </div>
         </div>
     </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/words.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
